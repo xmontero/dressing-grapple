@@ -1,2 +1,2 @@
 #!/bin/bash
-java -classpath build DemoApp
+java -classpath build xavi_montero.dressing_grapple.java.demo.DemoApp

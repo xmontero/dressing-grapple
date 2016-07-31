@@ -1,2 +1,2 @@
 #!/bin/bash
-javac -classpath build -sourcepath java/src -d build java/demo/DemoApp.java
+javac -classpath build -d build java/src/Calculator.java java/demo/DemoApp.java

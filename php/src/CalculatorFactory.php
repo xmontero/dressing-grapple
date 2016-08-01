@@ -1,6 +1,6 @@
 <?php
 
-namespace XaviMontero\DressingGrapple;
+namespace XaviMontero\DressingGrapple\Php;
 
 /**
  * Factory service to create the calculator class.

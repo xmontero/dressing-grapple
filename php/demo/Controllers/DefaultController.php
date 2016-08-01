@@ -1,6 +1,6 @@
 <?php
 
-namespace XaviMontero\DressingGrapple\Demo\Controllers;
+namespace XaviMontero\DressingGrapple\Php\Demo\Controllers;
 
 use XaviMontero\DressingGrapple\CalculatorFactory;
 

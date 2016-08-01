@@ -1,6 +1,6 @@
 <?php
 
-namespace XaviMontero\DressingGrapple\Demo;
+namespace XaviMontero\DressingGrapple\Php\Demo;
 
 //-------------------------------------------------------------------------//
 // Set the autoloader up                                                   //

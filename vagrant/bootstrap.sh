@@ -11,7 +11,9 @@ apt-get install -y libapache2-mod-php apache2                                   
 
 # Install the PHP bridge for the tomcat
 cp -a /vagrant/vagrant/php_java_bridge/JavaBridgeTemplate621.war /var/lib/tomcat8/webapps/JavaBridge.war
-ln -sf /var/lib/tomcat8/webapps/JavaBridge /var/www/html/JavaBridge
+
+# Make the tomcat access our compiled files
+ln -sf /vagrant/build/xavi_montero /var/lib/tomcat8/lib/
 
 # Tune the PHP in the apache2 so it can consume the JavaBridge downloading the include from the tomcat.
 ln -sf /vagrant/vagrant/php/vagrant.ini /etc/php/7.0/apache2/conf.d/99-vagrant.ini

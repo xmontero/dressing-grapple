@@ -1,2 +1,3 @@
 #!/bin/bash
-javac -classpath build -d build java/src/Calculator.java java/demo/DemoApp.java
+export CLASSPATH="/vagrant/build:/usr/share/java/junit4.jar"
+javac -d /vagrant/build java/src/Calculator.java java/tests/CalculatorTest.java java/demo/DemoApp.java

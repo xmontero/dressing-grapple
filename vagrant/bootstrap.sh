@@ -4,7 +4,7 @@
 
 # Setup the system.
 apt-get update
-apt-get install -y php php-xdebug php-xml zip unzip composer doxygen graphviz default-jdk
+apt-get install -y php php-xdebug php-xml zip unzip composer doxygen graphviz default-jdk junit4
 
 # User mode
 su vagrant

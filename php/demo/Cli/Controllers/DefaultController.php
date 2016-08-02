@@ -32,7 +32,7 @@ class DefaultController
 
         $a = 3;
         $b = 4;
-        $calculator = new \java( "xavi_montero.dressing_grapple.java.Calculator" );
+        $calculator = new \Java( "xavi_montero.dressing_grapple.java.Calculator" );
 
         echo( 'Demo:' . PHP_EOL );
         echo( '    ' . $a . ' + ' . $b . ' = ' . $calculator->sum( $a, $b ) . PHP_EOL );

@@ -1,2 +1,0 @@
-#!/bin/bash
-php/vendor/bin/phpunit --coverage-html doc/generated/phpunit

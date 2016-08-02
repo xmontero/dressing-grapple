@@ -71,9 +71,16 @@ It uses a tomcat to serve the java classes over a port, and an apache on which y
 
     virtual$ tools/phpunit
 
+* You should see `OK (1 test, 1 assertion)`.
+* The only tested thing is that when invoking the `Calculator` via the Php-Java-Bridge, a class of type `Java` is returned.
+* It does not currently test the sum method because when trying it it breaks; probably because the bridge is old legacy code.
+    
 ### To run a framework-less PHP CLI demo
 
     virtual$ tools/demo_php
+    
+* This should display a standard output text in which you see at the end the expression `3 + 4 = 7`.
+* The `7` in there is computed by the java class `Calculator`, which is consumed from the PHP.
 
 ### To run a framework-less PHP web demo
 
@@ -83,3 +90,13 @@ It uses a tomcat to serve the java classes over a port, and an apache on which y
 * This should display an HTML content in which you see at the end the expression `3 + 4 = 7`. The `7` in there is
 computed by the java class `Calculator`, not the PHP program itself.
 * Boom! Apache-Php consuming java. **Done!**
+
+## 4. Documentation
+ 
+### To create the documentation 
+
+    virtual$ tools/doxygen
+    
+* This runs the doxygen command installed by the vagrant provisioner.
+* You will have the results at `/vagrant/doc/generated/doxygen/index.html`.
+* You can open that file from a browser in the host computer via the vagrant shared directory.

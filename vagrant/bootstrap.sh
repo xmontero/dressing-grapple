@@ -15,13 +15,16 @@ cp -a /vagrant/vagrant/php_java_bridge/JavaBridgeTemplate621.war /var/lib/tomcat
 # Make the tomcat access our compiled files
 ln -sf /vagrant/build/xavi_montero /var/lib/tomcat8/lib/
 
-# Tune the PHP in the apache2 so it can consume the JavaBridge downloading the include from the tomcat.
+# Tune the PHP in the CLI and apache2 configuration so it can consume the JavaBridge downloading the include from the tomcat.
+# TODO: Use composer or other tools to make sure we do not need a remote call.
+# TODO: Once done, eliminate the 'require_once' calling 'http://' from apache2 and cli controllers of the demo.
+ln -sf /vagrant/vagrant/php/vagrant.ini /etc/php/7.0/cli/conf.d/99-vagrant.ini
 ln -sf /vagrant/vagrant/php/vagrant.ini /etc/php/7.0/apache2/conf.d/99-vagrant.ini
 service apache2 reload
 
-# Setup the demo
+# Setup the demo/Web
 mkdir /var/www/html/PhpToJavaDemo
-ln -sf /vagrant/php/web/demo.php /var/www/html/PhpToJavaDemo/
+ln -sf /vagrant/php/demo/Web/demo.php /var/www/html/PhpToJavaDemo/
 
 # User mode
 su vagrant

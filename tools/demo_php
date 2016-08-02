@@ -1,2 +1,2 @@
 #!/bin/bash
-php php/demo/demo.php
+php php/demo/Cli/demo.php

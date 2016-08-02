@@ -5,8 +5,7 @@
         {
             "XaviMontero\\DressingGrapple\\Php\\": "src/",
             "XaviMontero\\DressingGrapple\\Php\\Tests\\": "tests/",
-            "XaviMontero\\DressingGrapple\\Php\\Demo\\": "demo/",
-            "XaviMontero\\DressingGrapple\\Php\\Web\\": "web/"
+            "XaviMontero\\DressingGrapple\\Php\\Demo\\": "demo/"
         }
     },
     "require-dev":

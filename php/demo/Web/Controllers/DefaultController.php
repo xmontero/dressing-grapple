@@ -1,8 +1,10 @@
 <?php
 
-namespace XaviMontero\DressingGrapple\Php\Web\Controllers;
+namespace XaviMontero\DressingGrapple\Php\Demo\Web\Controllers;
 
 require_once( "http://localhost:8080/JavaBridge/java/Java.inc" );
+// TODO: Use composer or other tools to make sure we do not need a remote call.
+// TODO: Once done, eliminate the tuning of the apache2 and cli settings in the provisioner.
 
 class DefaultController
 {
@@ -23,7 +25,7 @@ class DefaultController
         <h2>Explanation:</h2>
         <div>
             <ul>
-                <li>This web php demo program calls the Calculator java class and executes the sum() method.</li>
+                <li>This Web-PHP demo program calls the Calculator java class and executes the sum() method.</li>
                 <li>See the README.md for more information.</li>
             </ul>
         </div>
